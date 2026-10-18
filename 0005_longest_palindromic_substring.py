@@ -1,5 +1,6 @@
 # 5. Longest Palindromic Substring
 # https://leetcode.com/problems/longest-palindromic-substring/
+# worth to revisit
 
 class Solution:
     def longestPalindrome(self, s: str) -> str:
