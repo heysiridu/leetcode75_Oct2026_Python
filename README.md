@@ -1,225 +1,237 @@
-# 刷题计划（调整后的 75 题）
+# 🍂 LeetCode 75 — Autumn in NYC Edition 🗽
 
-DP 精简到 2 道（只保留最经典的入门和双串），多出的 quota 分给了 stack、greedy、DFS、设计/模拟题。
+> 🧡 A fall-in-Central-Park kind of grind: pumpkin spice, falling leaves, and 75 LeetCode problems. One commit per solved problem, cozy sweater optional.
 
-## 一、数组双指针（5 题）
-对应教程：双指针技巧秒杀七道数组题目、一个方法团灭 nSum 问题
+☕ **The plan:** DP got trimmed down to 2 essentials (just enough to get the state-transition vibes), and the leftover quota got rerouted into stacks, greedy, DFS, and design/simulation problems — the topics that actually show up in interviews.
 
-| # | 题目 | 核心技巧 |
+---
+
+## 🍁 1. Array Two Pointers (5 problems)
+📖 Reference: *Two Pointers Technique for 7 Array Problems*, *One Method to Rule All nSum Problems*
+
+| # | Problem | Core Technique |
 |---|---|---|
-| 1 | 26. 删除有序数组中的重复项 | 快慢指针原地去重 |
-| 2 | 283. 移动零 | 快慢指针 |
-| 3 | 167. 两数之和 II | 左右指针 |
-| 4 | 344. 反转字符串 | 左右指针交换 |
-| 5 | 5. 最长回文子串 | 中心扩散 |
+| 1 | 26. Remove Duplicates from Sorted Array | 🐢🐇 Slow/fast pointers, in-place dedup |
+| 2 | 283. Move Zeroes | 🐢🐇 Slow/fast pointers |
+| 3 | 167. Two Sum II | ↔️ Left/right pointers |
+| 4 | 344. Reverse String | ↔️ Left/right swap |
+| 5 | 5. Longest Palindromic Substring | 🎯 Expand from center |
 
-## 二、链表（6 题）
-对应教程：双指针技巧秒杀七道链表题目、单链表的花式反转方法汇总
+## 🧣 2. Linked List (6 problems)
+📖 Reference: *Two Pointers for 7 Linked List Problems*, *Every Way to Reverse a Linked List*
 
-| # | 题目 | 核心技巧 |
+| # | Problem | Core Technique |
 |---|---|---|
-| 6 | 141. 环形链表 | 快慢指针判环 |
-| 7 | 19. 删除链表的倒数第 N 个结点 | 快慢指针 |
-| 8 | 21. 合并两个有序链表 | 虚拟头节点 |
-| 9 | 25. K 个一组翻转链表 | 递归反转 |
-| 10 | 206. 反转链表 | 迭代/递归反转 |
-| 11 | 234. 回文链表 | 找中点+反转后半部分 |
+| 6 | 141. Linked List Cycle | 🐢🐇 Fast/slow pointers, cycle detection |
+| 7 | 19. Remove Nth Node From End of List | 🐢🐇 Fast/slow pointers |
+| 8 | 21. Merge Two Sorted Lists | 🪢 Dummy head node |
+| 9 | 25. Reverse Nodes in k-Group | 🔁 Recursive reversal |
+| 10 | 206. Reverse Linked List | 🔁 Iterative / recursive reversal |
+| 11 | 234. Palindrome Linked List | 🪞 Find midpoint + reverse second half |
 
-## 三、滑动窗口（4 题）
-对应教程：滑动窗口算法核心代码模板
+## 🍂 3. Sliding Window (4 problems)
+📖 Reference: *Sliding Window Core Template*
 
-| # | 题目 | 核心技巧 |
+| # | Problem | Core Technique |
 |---|---|---|
-| 12 | 76. 最小覆盖子串 | 滑动窗口模板 |
-| 13 | 567. 字符串的排列 | 固定窗口 |
-| 14 | 438. 找到字符串中所有字母异位词 | 固定窗口 |
-| 15 | 3. 无重复字符的最长子串 | 滑动窗口 |
+| 12 | 76. Minimum Window Substring | 🪟 Sliding window template |
+| 13 | 567. Permutation in String | 🪟 Fixed-size window |
+| 14 | 438. Find All Anagrams in a String | 🪟 Fixed-size window |
+| 15 | 3. Longest Substring Without Repeating Characters | 🪟 Sliding window |
 
-## 四、二分查找（4 题）
-对应教程：二分搜索算法核心代码模板、实际运用二分搜索时的思维框架
+## 🗽 4. Binary Search (4 problems)
+📖 Reference: *Binary Search Core Template*, *A Mental Framework for Binary Search*
 
-| # | 题目 | 核心技巧 |
+| # | Problem | Core Technique |
 |---|---|---|
-| 16 | 704. 二分查找 | 基础二分 |
-| 17 | 34. 在排序数组中查找元素的第一个和最后一个位置 | 左右边界 |
-| 18 | 33. 搜索旋转排序数组 | 变种二分 |
-| 19 | 875. 爱吃香蕉的珂珂 | 二分答案 |
+| 16 | 704. Binary Search | 🔍 Basic binary search |
+| 17 | 34. Find First and Last Position of Element in Sorted Array | 🔍 Left/right boundary search |
+| 18 | 33. Search in Rotated Sorted Array | 🔍 Binary search variant |
+| 19 | 875. Koko Eating Bananas | 🔍 Binary search on the answer |
 
-## 五、栈 / 队列 / 单调结构（7 题）⬆️
-对应教程：栈的经典习题、括号类问题汇总、单调栈算法模板解决三道例题、单调队列结构解决滑动窗口问题
+## 🎃 5. Stack / Queue / Monotonic Structures (7 problems) ⬆️
+📖 Reference: *Classic Stack Problems*, *Bracket Problems Roundup*, *Monotonic Stack Template*, *Monotonic Queue for Sliding Window*
 
-| # | 题目 | 核心技巧 |
+| # | Problem | Core Technique |
 |---|---|---|
-| 20 | 20. 有效的括号 | 栈基础 |
-| 21 | 232. 用栈实现队列 | 双栈模拟 |
-| 22 | 155. 最小栈 | 辅助栈 |
-| 23 | 394. 字符串解码 | 栈模拟嵌套 |
-| 24 | 739. 每日温度 | 单调栈 |
-| 25 | 84. 柱状图中最大的矩形 | 单调栈 |
-| 26 | 239. 滑动窗口最大值 | 单调队列 |
+| 20 | 20. Valid Parentheses | 📚 Basic stack |
+| 21 | 232. Implement Queue using Stacks | 📚 Two-stack simulation |
+| 22 | 155. Min Stack | 📚 Auxiliary stack |
+| 23 | 394. Decode String | 📚 Stack for nested structures |
+| 24 | 739. Daily Temperatures | 📈 Monotonic stack |
+| 25 | 84. Largest Rectangle in Histogram | 📈 Monotonic stack |
+| 26 | 239. Sliding Window Maximum | 📈 Monotonic queue |
 
-## 六、二叉树（7 题）
-对应教程：二叉树系列算法核心纲领、二叉树心法（思路篇）、二叉树心法（构造篇）、二叉树心法（后序篇）
+## 🍁 6. Binary Tree (7 problems)
+📖 Reference: *Core Principles of Binary Tree Algorithms*, *Binary Tree Mental Models (Think / Construct / Postorder)*
 
-| # | 题目 | 核心技巧 |
+| # | Problem | Core Technique |
 |---|---|---|
-| 27 | 104. 二叉树的最大深度 | 递归/遍历 |
-| 28 | 226. 翻转二叉树 | 递归 |
-| 29 | 102. 二叉树的层序遍历 | BFS |
-| 30 | 105. 从前序与中序遍历序列构造二叉树 | 递归构造 |
-| 31 | 236. 二叉树的最近公共祖先 | 后序遍历 |
-| 32 | 124. 二叉树中的最大路径和 | 后序遍历 |
-| 33 | 297. 二叉树的序列化与反序列化 | 序列化 |
+| 27 | 104. Maximum Depth of Binary Tree | 🌳 Recursion / traversal |
+| 28 | 226. Invert Binary Tree | 🌳 Recursion |
+| 29 | 102. Binary Tree Level Order Traversal | 🌳 BFS |
+| 30 | 105. Construct Binary Tree from Preorder and Inorder Traversal | 🌳 Recursive construction |
+| 31 | 236. Lowest Common Ancestor of a Binary Tree | 🌳 Postorder traversal |
+| 32 | 124. Binary Tree Maximum Path Sum | 🌳 Postorder traversal |
+| 33 | 297. Serialize and Deserialize Binary Tree | 🌳 Serialization |
 
-## 七、二叉搜索树（3 题）
-对应教程：二叉搜索树心法（特性篇）、二叉搜索树心法（基操篇）
+## 🍂 7. Binary Search Tree (3 problems)
+📖 Reference: *BST Properties*, *BST Basic Operations*
 
-| # | 题目 | 核心技巧 |
+| # | Problem | Core Technique |
 |---|---|---|
-| 34 | 230. 二叉搜索树中第K小的元素 | 中序遍历 |
-| 35 | 98. 验证二叉搜索树 | 中序/递归 |
-| 36 | 450. 删除二叉搜索树中的节点 | BST 操作 |
+| 34 | 230. Kth Smallest Element in a BST | 🌲 Inorder traversal |
+| 35 | 98. Validate Binary Search Tree | 🌲 Inorder / recursion |
+| 36 | 450. Delete Node in a BST | 🌲 BST operations |
 
-## 八、DFS / 网格搜索（4 题）⬆️
-对应教程：一文秒杀所有岛屿题目
+## 🧡 8. DFS / Grid Search (4 problems) ⬆️
+📖 Reference: *One Article to Crush All Island Problems*
 
-| # | 题目 | 核心技巧 |
+| # | Problem | Core Technique |
 |---|---|---|
-| 37 | 200. 岛屿数量 | DFS 网格遍历 |
-| 38 | 695. 岛屿的最大面积 | DFS 连通块 |
-| 39 | 79. 单词搜索 | DFS 回溯搜索 |
-| 40 | 130. 被围绕的区域 | DFS 边界标记 |
+| 37 | 200. Number of Islands | 🏝️ DFS grid traversal |
+| 38 | 695. Max Area of Island | 🏝️ DFS connected components |
+| 39 | 79. Word Search | 🏝️ DFS + backtracking |
+| 40 | 130. Surrounded Regions | 🏝️ DFS boundary marking |
 
-## 九、图论（3 题）
-对应教程：二分图判定算法、拓扑排序算法、Dijkstra 算法核心原理及实现、Union-Find 并查集算法
+## 🗽 9. Graph Theory (3 problems)
+📖 Reference: *Bipartite Graph Check*, *Topological Sort*, *Dijkstra's Algorithm*, *Union-Find*
 
-| # | 题目 | 核心技巧 |
+| # | Problem | Core Technique |
 |---|---|---|
-| 41 | 785. 判断二分图 | 二分图染色 |
-| 42 | 210. 课程表 II | 拓扑排序 |
-| 43 | 743. 网络延迟时间 | Dijkstra |
+| 41 | 785. Is Graph Bipartite? | 🎨 Graph coloring |
+| 42 | 210. Course Schedule II | 🧭 Topological sort |
+| 43 | 743. Network Delay Time | 🧭 Dijkstra |
 
-## 十、回溯算法（5 题）
-对应教程：回溯算法解题套路框架、回溯算法秒杀所有排列/组合/子集问题、回溯算法实践：数独和 N 皇后问题
+## 🍁 10. Backtracking (5 problems)
+📖 Reference: *Backtracking Framework*, *Permutations/Combinations/Subsets*, *Sudoku & N-Queens*
 
-| # | 题目 | 核心技巧 |
+| # | Problem | Core Technique |
 |---|---|---|
-| 44 | 46. 全排列 | 排列模板 |
-| 45 | 78. 子集 | 子集模板 |
-| 46 | 77. 组合 | 组合模板 |
-| 47 | 51. N 皇后 | 经典回溯 |
-| 48 | 22. 括号生成 | 剪枝回溯 |
+| 44 | 46. Permutations | 🔀 Permutation template |
+| 45 | 78. Subsets | 🔀 Subset template |
+| 46 | 77. Combinations | 🔀 Combination template |
+| 47 | 51. N-Queens | ♛ Classic backtracking |
+| 48 | 22. Generate Parentheses | ✂️ Pruned backtracking |
 
-## 十一、BFS（3 题）
-对应教程：BFS 算法解题套路框架
+## 🎃 11. BFS (3 problems)
+📖 Reference: *BFS Framework*
 
-| # | 题目 | 核心技巧 |
+| # | Problem | Core Technique |
 |---|---|---|
-| 49 | 111. 二叉树的最小深度 | BFS 层序 |
-| 50 | 752. 打开转盘锁 | BFS 最短路径 |
-| 51 | 1091. 二进制矩阵中的最短路径 | BFS 网格 |
+| 49 | 111. Minimum Depth of Binary Tree | 🌊 Level-order BFS |
+| 50 | 752. Open the Lock | 🌊 BFS shortest path |
+| 51 | 1091. Shortest Path in Binary Matrix | 🌊 Grid BFS |
 
-## 十二、动态规划（2 题）⬇️
-对应教程：动态规划解题套路框架、经典动态规划：最长公共子序列
+## 🍂 12. Dynamic Programming (2 problems) ⬇️
+📖 Reference: *DP Framework*, *Classic DP: Longest Common Subsequence*
 
-| # | 题目 | 核心技巧 |
+| # | Problem | Core Technique |
 |---|---|---|
-| 52 | 322. 零钱兑换 | 背包 DP 入门 |
-| 53 | 1143. 最长公共子序列 | 双串 DP 经典 |
+| 52 | 322. Coin Change | 🎒 Knapsack DP basics |
+| 53 | 1143. Longest Common Subsequence | 🧵 Classic two-string DP |
 
-## 十三、贪心算法（6 题）⬆️
-对应教程：贪心算法解题套路框架、贪心算法之区间调度问题、老司机加油算法、一行代码就能解决的算法题
+## 🧡 13. Greedy Algorithms (6 problems) ⬆️
+📖 Reference: *Greedy Framework*, *Interval Scheduling*, *Gas Station Problem*, *One-Liner Greedy Tricks*
 
-| # | 题目 | 核心技巧 |
+| # | Problem | Core Technique |
 |---|---|---|
-| 54 | 435. 无重叠区间 | 区间调度 |
-| 55 | 45. 跳跃游戏 II | 贪心跳跃 |
-| 56 | 134. 加油站 | 贪心环形 |
-| 57 | 55. 跳跃游戏 | 贪心可达性 |
-| 58 | 406. 根据身高重建队列 | 排序+贪心 |
-| 59 | 763. 划分字母区间 | 贪心切分 |
+| 54 | 435. Non-overlapping Intervals | 📅 Interval scheduling |
+| 55 | 45. Jump Game II | 🦘 Greedy jumping |
+| 56 | 134. Gas Station | ⛽ Circular greedy |
+| 57 | 55. Jump Game | 🦘 Greedy reachability |
+| 58 | 406. Queue Reconstruction by Height | 📏 Sort + greedy |
+| 59 | 763. Partition Labels | ✂️ Greedy partitioning |
 
-## 十四、前缀和 / 差分（2 题）
-对应教程：小而美的算法技巧：前缀和数组、小而美的算法技巧：差分数组
+## 🍁 14. Prefix Sum / Difference Array (2 problems)
+📖 Reference: *Prefix Sum Arrays*, *Difference Arrays*
 
-| # | 题目 | 核心技巧 |
+| # | Problem | Core Technique |
 |---|---|---|
-| 60 | 303. 区域和检索 - 数组不可变 | 前缀和 |
-| 61 | 1109. 航班预订统计 | 差分数组 |
+| 60 | 303. Range Sum Query - Immutable | ➕ Prefix sum |
+| 61 | 1109. Corporate Flight Bookings | ➖ Difference array |
 
-## 十五、设计题 / 模拟（5 题）⬆️
-对应教程：算法就像搭乐高：手撸 LRU 算法、算法就像搭乐高：手撸 LFU 算法、二维数组的花式遍历技巧
+## 🗽 15. Design / Simulation (5 problems) ⬆️
+📖 Reference: *Build Your Own LRU Cache*, *Build Your Own LFU Cache*, *Fancy 2D Array Traversal*
 
-| # | 题目 | 核心技巧 |
+| # | Problem | Core Technique |
 |---|---|---|
-| 62 | 146. LRU 缓存 | 哈希表+双向链表 |
-| 63 | 460. LFU 缓存 | 哈希表+频率链表 |
-| 64 | 54. 螺旋矩阵 | 模拟边界收缩 |
-| 65 | 48. 旋转图像 | 模拟逐层旋转 |
-| 66 | 8. 字符串转换整数 (atoi) | 模拟边界处理 |
+| 62 | 146. LRU Cache | 🗂️ Hash map + doubly linked list |
+| 63 | 460. LFU Cache | 🗂️ Hash map + frequency lists |
+| 64 | 54. Spiral Matrix | 🌀 Shrinking boundary simulation |
+| 65 | 48. Rotate Image | 🌀 Layer-by-layer rotation |
+| 66 | 8. String to Integer (atoi) | 🧮 Simulation + edge cases |
 
-## 十六、哈希表（2 题）
-对应教程：哈希表更多习题
+## 🍂 16. Hash Table (2 problems)
+📖 Reference: *More Hash Table Practice*
 
-| # | 题目 | 核心技巧 |
+| # | Problem | Core Technique |
 |---|---|---|
-| 67 | 1. 两数之和 | 哈希表 |
-| 68 | 49. 字母异位词分组 | 哈希表 |
+| 67 | 1. Two Sum | #️⃣ Hash map |
+| 68 | 49. Group Anagrams | #️⃣ Hash map |
 
-## 十七、排序 / 分治（2 题）
-对应教程：拓展：归并排序详解及应用、拓展：快速排序详解及应用
+## 🎃 17. Sorting / Divide and Conquer (2 problems)
+📖 Reference: *Merge Sort Explained*, *Quick Sort Explained*
 
-| # | 题目 | 核心技巧 |
+| # | Problem | Core Technique |
 |---|---|---|
-| 69 | 912. 排序数组 | 归并/快排 |
-| 70 | 215. 数组中的第K个最大元素 | 快速选择 |
+| 69 | 912. Sort an Array | 🔀 Merge / quick sort |
+| 70 | 215. Kth Largest Element in an Array | ⚡ Quickselect |
 
-## 十八、数学 / 位运算（2 题）
-对应教程：必知必会数学技巧、常用的位操作
+## 🍁 18. Math / Bit Manipulation (2 problems)
+📖 Reference: *Essential Math Tricks*, *Common Bit Tricks*
 
-| # | 题目 | 核心技巧 |
+| # | Problem | Core Technique |
 |---|---|---|
-| 71 | 204. 计数质数 | 埃氏筛 |
-| 72 | 136. 只出现一次的数字 | 异或 |
+| 71 | 204. Count Primes | 🔢 Sieve of Eratosthenes |
+| 72 | 136. Single Number | 🔢 XOR |
 
-## 十九、高频难题（3 题）
-对应教程：如何高效解决接雨水问题、两个二叉堆实现中位数算法
+## 🧡 19. Hard-Mode Favorites (3 problems)
+📖 Reference: *Solving Trapping Rain Water Efficiently*, *Median with Two Heaps*
 
-| # | 题目 | 核心技巧 |
+| # | Problem | Core Technique |
 |---|---|---|
-| 73 | 42. 接雨水 | 双指针/单调栈 |
-| 74 | 4. 寻找两个正序数组的中位数 | 二分 |
-| 75 | 295. 数据流的中位数 | 双堆 |
+| 73 | 42. Trapping Rain Water | 🌧️ Two pointers / monotonic stack |
+| 74 | 4. Median of Two Sorted Arrays | 🔍 Binary search |
+| 75 | 295. Find Median from Data Stream | ⚖️ Two heaps |
 
-## 各 topic 题数汇总
+---
 
-| Topic | 题数 | 变化 |
+## 🍂 Topic Count Summary
+
+| Topic | Count | Change |
 |---|---|---|
-| 数组双指针 | 5 | - |
-| 链表 | 6 | - |
-| 滑动窗口 | 4 | - |
-| 二分查找 | 4 | - |
-| 栈/队列/单调结构 | 7 | +2 |
-| 二叉树 | 7 | - |
+| Array Two Pointers | 5 | - |
+| Linked List | 6 | - |
+| Sliding Window | 4 | - |
+| Binary Search | 4 | - |
+| Stack/Queue/Monotonic | 7 | +2 |
+| Binary Tree | 7 | - |
 | BST | 3 | - |
-| DFS/网格 | 4 | 新增 |
-| 图论 | 3 | -2 |
-| 回溯 | 5 | - |
+| DFS/Grid | 4 | new |
+| Graph Theory | 3 | -2 |
+| Backtracking | 5 | - |
 | BFS | 3 | - |
 | DP | 2 | -10 |
-| 贪心 | 6 | +3 |
-| 前缀和/差分 | 2 | - |
-| 设计/模拟 | 5 | +3 |
-| 哈希表 | 2 | - |
-| 排序/分治 | 2 | - |
-| 数学/位运算 | 2 | - |
-| 高频难题 | 3 | - |
-| **总计** | **75** | |
+| Greedy | 6 | +3 |
+| Prefix Sum/Diff | 2 | - |
+| Design/Simulation | 5 | +3 |
+| Hash Table | 2 | - |
+| Sorting/D&C | 2 | - |
+| Math/Bit Manip | 2 | - |
+| Hard-Mode Favorites | 3 | - |
+| **Total** | **75** | 🍂 |
 
-DP 只留了 2 道最经典的，足够理解状态转移的核心思想。如果之后发现 DP 在面试中占比很高，可以再从教程的「动态规划经典习题 I」和「动态规划经典习题 II」里挑几道补上。
+🎃 DP is trimmed down to the 2 most essential problems — just enough to get comfortable with state transitions. If DP ends up showing up a lot in interviews later, more can be pulled in from the *Classic DP Practice I & II* tutorials.
 
-## 进度
+---
 
-| # | 题目 | 解法 |
+## 🗽 Progress Tracker
+
+| # | Problem | Solution |
 |---|---|---|
-| 1 | 26. 删除有序数组中的重复项 | [`0026_remove_duplicates_from_sorted_array.py`](./0026_remove_duplicates_from_sorted_array.py) |
+| 1 | 26. Remove Duplicates from Sorted Array | [`0026_remove_duplicates_from_sorted_array.py`](./0026_remove_duplicates_from_sorted_array.py) 🍁✅ |
+
+---
+
+🍁 *74 leaves left to rake. One commit at a time.* 🧡
