@@ -233,6 +233,7 @@
 | 1 | 26. Remove Duplicates from Sorted Array | [`0026_remove_duplicates_from_sorted_array.py`](./0026_remove_duplicates_from_sorted_array.py) 🍁✅ |
 | 2 | 283. Move Zeroes | [`283_move_zeroes.py`](./283_move_zeroes.py) 🍁✅ |
 | 3 | 167. Two Sum II | [`0167_two_sum_ii.py`](./0167_two_sum_ii.py) 🍁✅ |
+| 4 | 344. Reverse String | [`344_reverse_string.py`](./344_reverse_string.py) 🍁✅ |
 | 5 | 5. Longest Palindromic Substring | [`0005_longest_palindromic_substring.py`](./0005_longest_palindromic_substring.py) 🍁✅ |
 
 ---
