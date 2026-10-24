@@ -2,6 +2,8 @@
 # https://leetcode.com/problems/longest-palindromic-substring/
 # worth to revisit
 
+# reviewed on Oct 24th 2026
+
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         res = ""
